@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require angular
+//= require angular-route
+//= require angular-resource
+//= require angular-rails-templates
 //= require_tree .
+//= require bankiNg/app.js
+//= require_tree ./bankiNg
