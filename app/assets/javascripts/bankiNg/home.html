@@ -1,7 +1,14 @@
-<input type="text" ng-model="countryName" />
-<br><br>
-{{countryName}}
+Country Name (full): <input type="text" ng-model="countryName" />
 
-<ul>
-  <li ng-repeat="state in country.countries">{{state.name}}</li>
-</ul>
+<br>
+<div ng-repeat="state in country.countries">
+  <div ng-if="state.name.toLowerCase().includes(countryName.toLowerCase()) && state.region.id != 'NA'">
+    <br>{{state.name}}
+    <br>{{state.region.value}}
+    <br>{{state.incomeLevel.value}}
+    <br>{{state.capitalCity}}
+    <br>{{state}}
+  </div>
+</div>
+
+<br><br>
