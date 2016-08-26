@@ -6,7 +6,9 @@
       .config(['$routeProvider', function($routeProvider) {
         $routeProvider
           .when('/', {
-            templateUrl: 'bankiNg/home.html'
+            templateUrl: 'bankiNg/home.html',
+            controller: 'CountryController',
+            controllerAs: 'country'
           });
       }]);
   })
