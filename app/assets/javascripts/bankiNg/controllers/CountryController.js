@@ -1,13 +1,14 @@
 function CountryController(BankingDataService) {
   var ctrl = this;
 
-  returnCountry = function() {
+  
     BankingDataService
       .getCountries()
       .then(function(res) {
-        ctrl.countries = res.data
+        ctrl.countries = res.data[1]
       });
-  }
+  
+
 }
 
 angular
