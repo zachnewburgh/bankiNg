@@ -1,3 +1,7 @@
 <input type="text" ng-model="countryName" />
 <br><br>
 {{countryName}}
+
+<ul>
+  <li ng-repeat="state in country.countries">{{state.name}}</li>
+</ul>
