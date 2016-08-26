@@ -1,5 +1,5 @@
 function BankingDataService($http) {
-  var URL = "http://api.worldbank.org/countries/"
+  var URL = "https://crossorigin.me/http://api.worldbank.org/countries?format=JSON"
 
   this.getCountries = function() {
     return $http.get(URL);
